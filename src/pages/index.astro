@@ -1,16 +1,29 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/base.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>FashionRUs</title>
+    </head>
+
+    <body>
+      <main>
+        <h2>Categories</h2>
+        <section class="categorylist">
+          <a href="productlist.html">Accessories</a>
+          <a href="productlist.html">Apparel</a>
+          <a href="productlist.html">Footwear</a>
+          <a href="productlist.html">Free Items</a>
+          <a href="productlist.html">Personal Care</a>
+          <a href="productlist.html">Sporting Goods</a>
+        </section>
+      </main>
+    </body>
+  </html>
+</Layout>
